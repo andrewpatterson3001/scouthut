@@ -1,0 +1,14 @@
+ <h3> Sign In </h3>
+  <% if @login_fail %>
+    <h2> Bad email or password. Try again!</h2>
+  <% end %>
+
+  <form id="signin-form" method="post" action="/sessions">
+    <label class="label" for="email"> Email </label>
+    <input type="text" name="email" placeholder="Your Email">
+    <br>
+    <label class="label" for="password"> Password </label>
+    <input type="text" name="password" placeholder="Your Password">
+    <br>
+    <div class="submit"><input type="submit" value="Sign In!!!"></div>
+  </form>
