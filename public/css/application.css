@@ -3,7 +3,28 @@
   width: 600px;
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
+  background-color: #808460;
 }
 th {
   text-align: left;
+}
+
+body {
+  background-color: #DFDDB9;
+}
+
+header {
+  background-color: #35574F;
+}
+
+footer {
+  background-color: #35574F;
+}
+
+button {
+  background-color: #A32027;
+}
+
+input {
+  background-color: #865F3A;
 }
