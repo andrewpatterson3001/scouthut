@@ -10,6 +10,7 @@ th {
 }
 
 body {
+  font-family: 'Roboto Mono', ;
   background-color: #DFDDB9;
 }
 
@@ -23,6 +24,8 @@ footer {
 
 button {
   background-color: #A32027;
+  width: 10px;
+  height: 5px;
 }
 
 input {

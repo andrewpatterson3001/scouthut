@@ -1,0 +1,45 @@
+<div class="authentication">
+      <button id="signup" type="button" value="signup"></button>
+      <button id="signin" type="button" value="signin"></button>
+      <div class="signup">
+            <form action="/users" method="POST">
+                  Name:<br>
+                  <input type="text" name="name">
+                  <br>
+                  Birthday:<br>
+                  <input type="date" name="birthday">
+                  <br>
+                  Role:<br>
+                  <input type="radio" name="type" value="Scout">Scout
+                  <input type="radio" name="type" value="Scoutmaster">Scoutmaster
+                  <br>
+                  Email(Username):<br>
+                  <input type="text" name="email">
+                  <br>
+                  Troop:<br>
+                  <select name="troop">
+                  <option value="320">320</option>
+                  <option value="63">63</option>
+                  <option value="987">987</option>
+                  </select>
+                  <br>
+                  Desired Password:<br>
+                  <input type="text" name="password_hash">
+                  <br>
+                  Confirm Password:<br>
+                  <input type="text" name="password_hash">
+                  <input type="submit" value="Submit!!!">
+            </form>
+      </div>
+
+      <div class="signin">
+            <form action="/users/:id" method="get">
+                  Email(Username):<br>
+                  <input type="text" name="email">
+                  <br>
+                  Password:<br>
+                  <input type="text" name="password_hash">
+                  <input type="submit" value="Submit!!!">
+            </form>
+      </div>
+</div>
