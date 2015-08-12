@@ -1,0 +1,12 @@
+<!-- What if the user doesn't have JS enabled? Using form instead... -->
+
+ <form action="/sessions" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input class="button--epaulette" type="submit" value="Logout!!!">
+ </form>
+
+  <form action="/" method="get">
+    <input class="button--epaulette" type="submit" value="Return Home!">
+  </form>
+<p>You're in the user profile for <%= @user.name %></p>
+

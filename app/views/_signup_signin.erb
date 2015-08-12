@@ -1,4 +1,12 @@
 <div class="ta-c">
+      <% if @login_fail %>
+            <h2> Bad email or password. Try again!</h2>
+      <% end %>
+
+      <% if @signup_fail %>
+            <h2> Bad email or password. Try again!</h2>
+      <% end %>
+
       <button class="button--epaulette" id="signup" type="button" value="signup">Sign Up</button>
       <button class="button--epaulette" id="signin" type="button" value="signin">Sign In</button>
       <div class="signup">
@@ -24,22 +32,24 @@
                   </select>
                   <br>
                   Desired Password:<br>
-                  <input type="text" name="password_hash">
+                  <input type="password" name="password">
                   <br>
                   Confirm Password:<br>
-                  <input type="text" name="password_hash">
+                  <input type="password" name="password">
                   <input class="button--brownie" type="submit" value="Submit!!!">
             </form>
       </div>
 
       <div class="signin">
-            <form action="/users/:id" method="get">
+            <form action="/sessions" method="post">
                   Email(Username):<br>
                   <input type="text" name="email">
                   <br>
                   Password:<br>
-                  <input type="text" name="password_hash">
+                  <input type="password" name="password">
                   <input type="submit" value="Submit!!!">
             </form>
       </div>
 </div>
+
+
