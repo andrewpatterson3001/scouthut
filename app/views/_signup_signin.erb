@@ -1,0 +1,55 @@
+<div class="ta-c">
+      <% if @login_fail %>
+            <h2> Bad email or password. Try again!</h2>
+      <% end %>
+
+      <% if @signup_fail %>
+            <h2> Bad email or password. Try again!</h2>
+      <% end %>
+
+      <button class="button--epaulette" id="signup" type="button" value="signup">Sign Up</button>
+      <button class="button--epaulette" id="signin" type="button" value="signin">Sign In</button>
+      <div class="signup">
+            <form action="/users" method="POST">
+                  Name:<br>
+                  <input type="text" name="name">
+                  <br>
+                  Birthday:<br>
+                  <input type="date" name="birthday">
+                  <br>
+                  Role:<br>
+                  <input type="radio" name="type" value="Scout">Scout
+                  <input type="radio" name="type" value="Scoutmaster">Scoutmaster
+                  <br>
+                  Email(Username):<br>
+                  <input type="text" name="email">
+                  <br>
+                  Troop:<br>
+                  <select name="troop">
+                  <option value="320">320</option>
+                  <option value="63">63</option>
+                  <option value="987">987</option>
+                  </select>
+                  <br>
+                  Desired Password:<br>
+                  <input type="password" name="password">
+                  <br>
+                  Confirm Password:<br>
+                  <input type="password" name="password">
+                  <input class="button--brownie" type="submit" value="Submit!!!">
+            </form>
+      </div>
+
+      <div class="signin">
+            <form action="/sessions" method="post">
+                  Email(Username):<br>
+                  <input type="text" name="email">
+                  <br>
+                  Password:<br>
+                  <input type="password" name="password">
+                  <input type="submit" value="Submit!!!">
+            </form>
+      </div>
+</div>
+
+
