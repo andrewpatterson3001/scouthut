@@ -17,6 +17,9 @@ end
 
 get '/users/:id' do
   @user = User.find(params[:id])
+  @badgeimages_array = extract_badgeimages
+  @badgecriteria_array = extract_badgecriteria
+  @badgenames_array = extract_badgenames
   erb :'users/index'
 end
 

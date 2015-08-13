@@ -22,6 +22,8 @@ gem 'sass'
 
 gem 'bcrypt'
 
+gem 'nokogiri'
+
 group :test do
   gem 'faker'
   gem 'rspec'

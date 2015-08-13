@@ -1,20 +1,22 @@
-<header class="bgc-venture ">
-  <div class="ff-s bgc-olivedrabby-lt ta-c">
-  <h1>Welcome to Scouthut!</h1>
-  <p>Do a good turn daily!</p>
-</div>
-</header>
-
-<main>
-  <div class="bgc-pastey">
-    <% if logged_in? %>
-      <%= erb :'/_welcome', layout: false%>
-    <% else %>
-      <%= erb :'/_signup_signin', layout: false%>
-    <% end %>
+<div class="welcome-page-background">
+  <header class="bgc-venture ">
+    <div class="ff-s bgc-olivedrabby-lt ta-c">
+    <h1>Welcome to Scouthut!</h1>
+    <p>Do a good turn daily!</p>
   </div>
-</main>
+  </header>
 
-<footer class="bgc-venture-lt">
-<p>Copyright and Legal Stuff</p>
-</footer>
+  <main class="w-1-1">
+    <div class="bgc-pastey w-1-3">
+      <% if logged_in? %>
+        <%= erb :'/_welcome', layout: false%>
+      <% else %>
+        <%= erb :'/_signup_signin', layout: false%>
+      <% end %>
+    </div>
+  </main>
+
+  <footer class="pos-a bgc-venture-lt b-0 w-1-1">
+  <p>Copyright and Legal Stuff</p>
+  </footer>
+</div>

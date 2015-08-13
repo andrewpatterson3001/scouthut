@@ -1,12 +1,26 @@
 <!-- What if the user doesn't have JS enabled? Using form instead... -->
-
+<div class="profile-page-background">
  <form action="/sessions" method="post">
     <input type="hidden" name="_method" value="delete">
     <input class="button--epaulette" type="submit" value="Logout!!!">
  </form>
 
-  <form action="/" method="get">
+ <form action="/" method="get">
     <input class="button--epaulette" type="submit" value="Return Home!">
-  </form>
+ </form>
 <p>You're in the user profile for <%= @user.name %></p>
+
+<h3>Click a badge to check the requirements!</h3>
+<% counter = 0 %>
+<% while counter < 142 %>
+  <a href="<%= @badgecriteria_array[counter] %>"><img src="<%= @badgeimages_array[counter] %>" alt="<%= @badgenames_array[counter] %>"></a>
+  <% counter = counter + 1 %>
+<% end %>
+
+</div>
+
+
+
+
+
 
