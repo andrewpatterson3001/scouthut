@@ -10,7 +10,7 @@
  </form>
 <p>You're in the user profile for <%= @user.name %></p>
 
-
+<h3>Click a badge to check the requirements!</h3>
 <% counter = 0 %>
 <% while counter < 142 %>
   <a href="<%= @badgecriteria_array[counter] %>"><img src="<%= @badgeimages_array[counter] %>" alt="<%= @badgenames_array[counter] %>"></a>
